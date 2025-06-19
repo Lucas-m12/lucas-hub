@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://joaosilva.dev/sitemap.xml',
+    sitemap: 'https://lucasmarinho.com.br/sitemap.xml',
   };
 }

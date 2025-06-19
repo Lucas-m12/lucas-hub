@@ -1,9 +1,8 @@
 'use client';
 
-import React from 'react';
+import { useLanguage } from '@/lib/contexts/language-context';
 import { motion } from 'framer-motion';
 import { Heart } from 'lucide-react';
-import { useLanguage } from '@/lib/contexts/language-context';
 
 export function Footer() {
   const { t } = useLanguage();
@@ -22,7 +21,7 @@ export function Footer() {
           <div className="portfolio-divider mb-6" />
           
           <p className="text-portfolio-text/60 mb-4">
-            © {currentYear} João Silva. {t('footer.rights')}
+            © {currentYear} Lucas Marinho. {t('footer.rights')}
           </p>
           
           <div className="flex items-center justify-center text-portfolio-text/60">

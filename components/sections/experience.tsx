@@ -1,55 +1,54 @@
 'use client';
 
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Calendar, MapPin, Building } from 'lucide-react';
 import { useLanguage } from '@/lib/contexts/language-context';
+import { motion } from 'framer-motion';
+import { Building, Calendar, MapPin } from 'lucide-react';
 
 const experiences = [
   {
     id: 1,
     title: {
-      pt: 'Desenvolvedor Full Stack Sênior',
-      en: 'Senior Full Stack Developer',
+      pt: 'Engenheiro de Software',
+      en: 'Software Engineer',
     },
-    company: 'TechCorp Solutions',
-    location: 'São Paulo, SP',
+    company: 'Will Bank',
+    location: 'Remote',
     period: '2022 - Presente',
     description: {
-      pt: 'Lidero equipe de desenvolvimento de aplicações web modernas usando React, Node.js e AWS. Responsável por arquitetura de sistemas e mentoria de desenvolvedores junior.',
-      en: 'Lead development team for modern web applications using React, Node.js and AWS. Responsible for system architecture and mentoring junior developers.',
+      pt: 'Atuação em sistemas de pagamento críticos, como boletos, débito em conta e recargas de celular, com foco em performance, segurança e resiliência',
+      en: 'Development of critical payment systems, such as bank slips, direct debit and mobile top-ups, with focus on performance, security and resilience.',
     },
-    technologies: ['React', 'Node.js', 'TypeScript', 'AWS', 'PostgreSQL'],
+    technologies: ['Node.js', 'TypeScript', 'AWS', 'PostgreSQL', 'Flutter', 'Redis', 'Terraform'],
   },
   {
     id: 2,
     title: {
-      pt: 'Desenvolvedor Full Stack',
-      en: 'Full Stack Developer',
+      pt: 'Desenvolvedor Frontend Pleno',
+      en: 'Frontend Developer',
     },
-    company: 'Digital Innovations',
+    company: 'Phooto',
     location: 'Remote',
     period: '2020 - 2022',
     description: {
-      pt: 'Desenvolvi e mantive múltiplas aplicações web para clientes diversos, focando em performance e experiência do usuário. Implementei soluções de e-commerce e dashboards analíticos.',
-      en: 'Developed and maintained multiple web applications for diverse clients, focusing on performance and user experience. Implemented e-commerce solutions and analytical dashboards.',
+      pt: 'Desenvolvi e mantive aplicações web focando em performance e experiência do usuário. Implementei soluções de e-commerce e gráfica.',
+      en: 'Developed and maintained web applications focusing on performance and user experience. Implemented e-commerce solutions and graphics.',
     },
-    technologies: ['Vue.js', 'Python', 'Django', 'MongoDB', 'Docker'],
+    technologies: ['React', 'Node.js', 'TypeScript', 'Canvas'],
   },
   {
     id: 3,
     title: {
-      pt: 'Desenvolvedor Frontend',
-      en: 'Frontend Developer',
+      pt: 'Desenvolvedor Web',
+      en: 'Web Developer',
     },
-    company: 'StartupXYZ',
-    location: 'Rio de Janeiro, RJ',
+    company: 'Práxis Gestão Escolar',
+    location: 'Cajueiro - AL',
     period: '2019 - 2020',
     description: {
-      pt: 'Responsável pelo desenvolvimento da interface de usuário de uma plataforma SaaS, trabalhando diretamente com designers UX/UI para criar experiências excepcionais.',
-      en: 'Responsible for developing the user interface of a SaaS platform, working directly with UX/UI designers to create exceptional experiences.',
+      pt: 'Desenvolvimento sistemas web e mobile para clientes da area de gestão escolar, com foco em performance e experiência do usuário.',
+      en: 'Development of web and mobile systems for clients in the education management area, focusing on performance and user experience.',
     },
-    technologies: ['React', 'JavaScript', 'Sass', 'REST APIs'],
+    technologies: ['PHP', 'MySQL', 'React Native', 'REST APIs'],
   },
 ];
 

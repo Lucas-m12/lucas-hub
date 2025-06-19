@@ -1,28 +1,27 @@
 'use client';
 
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Mail, Linkedin, Github, ExternalLink } from 'lucide-react';
-import { useLanguage } from '@/lib/contexts/language-context';
 import { Button } from '@/components/ui/button';
+import { useLanguage } from '@/lib/contexts/language-context';
+import { motion } from 'framer-motion';
+import { ExternalLink, Github, Linkedin, Mail } from 'lucide-react';
 
 const contactLinks = [
   {
     icon: Mail,
     label: 'contact.email',
-    href: 'mailto:joao@example.com',
+    href: 'mailto:lucasmarinhodasilva2@gmail.com',
     color: 'hover:text-portfolio-accent-blue',
   },
   {
     icon: Linkedin,
     label: 'contact.linkedin',
-    href: 'https://linkedin.com/in/joaosilva',
+    href: 'https://linkedin.com/in/lucas-marinho12',
     color: 'hover:text-portfolio-accent-blue',
   },
   {
     icon: Github,
     label: 'contact.github',
-    href: 'https://github.com/joaosilva',
+    href: 'https://github.com/lucas-m12',
     color: 'hover:text-portfolio-accent-green',
   },
 ];
@@ -115,7 +114,7 @@ export function ContactSection() {
               className="portfolio-gradient text-white hover:opacity-90 transition-opacity"
               asChild
             >
-              <a href="mailto:joao@example.com">
+              <a href="mailto:lucasmarinhodasilva2@gmail.com">
                 <Mail className="mr-2 w-5 h-5" />
                 {t('contact.email')}
               </a>

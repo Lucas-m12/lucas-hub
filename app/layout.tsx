@@ -1,7 +1,7 @@
-import './globals.css';
+import { LanguageProvider } from '@/lib/contexts/language-context';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import { LanguageProvider } from '@/lib/contexts/language-context';
+import './globals.css';
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -11,33 +11,33 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'João Silva - Desenvolvedor Full Stack',
-    template: '%s | João Silva - Desenvolvedor Full Stack'
+    default: 'Lucas Marinho - Desenvolvedor Full Stack',
+    template: '%s | Lucas Marinho - Desenvolvedor Full Stack'
   },
   description: 'Desenvolvedor Full Stack especializado em React, Node.js e tecnologias modernas. Criando soluções digitais inovadoras e experiências excepcionais.',
   keywords: ['desenvolvedor full stack', 'react', 'node.js', 'typescript', 'javascript', 'web development'],
-  authors: [{ name: 'João Silva' }],
-  creator: 'João Silva',
+  authors: [{ name: 'Lucas Marinho' }],
+  creator: 'Lucas Marinho',
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
     alternateLocale: 'en_US',
     url: 'https://joaosilva.dev',
-    siteName: 'João Silva - Portfolio',
-    title: 'João Silva - Desenvolvedor Full Stack',
+    siteName: 'Lucas Marinho - Portfolio',
+    title: 'Lucas Marinho - Desenvolvedor Full Stack',
     description: 'Desenvolvedor Full Stack especializado em React, Node.js e tecnologias modernas.',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'João Silva - Desenvolvedor Full Stack',
+        alt: 'Lucas Marinho - Desenvolvedor Full Stack',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'João Silva - Desenvolvedor Full Stack',
+    title: 'Lucas Marinho - Desenvolvedor Full Stack',
     description: 'Desenvolvedor Full Stack especializado em React, Node.js e tecnologias modernas.',
     images: ['/og-image.jpg'],
   },
@@ -65,10 +65,10 @@ export default function RootLayout({
   return (
     <html lang="pt" className="dark">
       <head>
-        <link rel="canonical" href="https://joaosilva.dev" />
-        <link rel="alternate" hrefLang="pt" href="https://joaosilva.dev" />
-        <link rel="alternate" hrefLang="en" href="https://joaosilva.dev/en" />
-        <link rel="alternate" hrefLang="x-default" href="https://joaosilva.dev" />
+        <link rel="canonical" href="https://lucasmarinho.com.br" />
+        <link rel="alternate" hrefLang="pt" href="https://lucasmarinho.com.br" />
+        <link rel="alternate" hrefLang="en" href="https://lucasmarinho.com.br" />
+        <link rel="alternate" hrefLang="x-default" href="https://lucasmarinho.com.br" />
       </head>
       <body className={inter.className}>
         <LanguageProvider>

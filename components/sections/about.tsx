@@ -1,9 +1,8 @@
 'use client';
 
-import React from 'react';
+import { useLanguage } from '@/lib/contexts/language-context';
 import { motion } from 'framer-motion';
 import { Code, Database, Globe, Smartphone } from 'lucide-react';
-import { useLanguage } from '@/lib/contexts/language-context';
 
 const skills = [
   {
@@ -15,13 +14,13 @@ const skills = [
   {
     icon: Database,
     title: 'Backend',
-    technologies: ['Node.js', 'PostgreSQL', 'MongoDB', 'API REST'],
+    technologies: ['Node.js', 'PostgreSQL', 'Go', 'PHP', 'Redis', 'NestJS'],
     color: 'text-portfolio-accent-green',
   },
   {
     icon: Globe,
     title: 'DevOps',
-    technologies: ['Docker', 'AWS', 'Vercel', 'CI/CD'],
+    technologies: ['Docker', 'AWS', 'CI/CD', 'Datadog', 'Terraform'],
     color: 'text-portfolio-accent-blue',
   },
   {

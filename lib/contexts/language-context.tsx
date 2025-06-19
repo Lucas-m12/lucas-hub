@@ -1,6 +1,6 @@
 'use client';
 
-import React, { createContext, useContext, useState, useCallback } from 'react';
+import React, { createContext, useCallback, useContext, useState } from 'react';
 
 type Language = 'pt' | 'en';
 
@@ -46,7 +46,7 @@ function getTranslations(language: Language): Record<string, string> {
       
       // Hero Section
       'hero.greeting': 'Hello, I\'m',
-      'hero.name': 'João Silva',
+      'hero.name': 'Lucas Marinho',
       'hero.title': 'Full Stack Developer',
       'hero.subtitle': 'I create modern and innovative digital solutions with focus on exceptional user experiences.',
       'hero.cta': 'View Projects',
@@ -94,7 +94,7 @@ function getTranslations(language: Language): Record<string, string> {
     
     // Hero Section
     'hero.greeting': 'Olá, eu sou',
-    'hero.name': 'João Silva',
+    'hero.name': 'Lucas Marinho',
     'hero.title': 'Desenvolvedor Full Stack',
     'hero.subtitle': 'Crio soluções digitais modernas e inovadoras com foco em experiências excepcionais.',
     'hero.cta': 'Ver Projetos',

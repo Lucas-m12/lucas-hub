@@ -1,10 +1,9 @@
 'use client';
 
-import React from 'react';
-import { motion } from 'framer-motion';
-import { ExternalLink, Github, ArrowUpRight } from 'lucide-react';
-import { useLanguage } from '@/lib/contexts/language-context';
 import { Button } from '@/components/ui/button';
+import { useLanguage } from '@/lib/contexts/language-context';
+import { motion } from 'framer-motion';
+import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
   {
@@ -16,7 +15,7 @@ const projects = [
     },
     technologies: ['Next.js', 'TypeScript', 'Stripe', 'PostgreSQL'],
     image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
-    liveUrl: '#',
+    // liveUrl: '#',
     githubUrl: '#',
     featured: true,
   },
@@ -123,16 +122,20 @@ export function ProjectsSection() {
                   
                   {/* Overlay buttons */}
                   <div className="absolute inset-0 flex items-center justify-center space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <Button
-                      size="sm"
-                      className="portfolio-gradient text-white"
-                      asChild
-                    >
-                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="w-4 h-4 mr-2" />
-                        {t('projects.liveDemo')}
-                      </a>
-                    </Button>
+                    {
+                      project?.liveUrl && (
+                        <Button
+                          size="sm"
+                          className="portfolio-gradient text-white"
+                          asChild
+                        >
+                          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                            <ExternalLink className="w-4 h-4 mr-2" />
+                            {t('projects.liveDemo')}
+                          </a>
+                        </Button>
+                      )
+                    }
                     <Button
                       variant="outline"
                       size="sm"
@@ -164,13 +167,13 @@ export function ProjectsSection() {
                       </span>
                     ))}
                   </div>
-                  <Button
+                  {/* <Button
                     variant="ghost"
                     className="text-portfolio-accent-blue hover:text-portfolio-accent-blue hover:bg-portfolio-bg/50 p-0 h-auto group/button"
                   >
                     {t('projects.viewMore')}
                     <ArrowUpRight className="w-4 h-4 ml-2 group-hover/button:translate-x-1 group-hover/button:-translate-y-1 transition-transform" />
-                  </Button>
+                  </Button> */}
                 </div>
               </motion.div>
             ))}
@@ -206,14 +209,18 @@ export function ProjectsSection() {
                     >
                       <Github className="w-5 h-5" />
                     </a>
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-portfolio-text/60 hover:text-portfolio-accent-blue transition-colors"
-                    >
-                      <ExternalLink className="w-5 h-5" />
-                    </a>
+                    {
+                      project?.liveUrl && (
+                        <a
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-portfolio-text/60 hover:text-portfolio-accent-blue transition-colors"
+                        >
+                          <ExternalLink className="w-5 h-5" />
+                        </a>
+                      )
+                    }
                   </div>
                 </div>
                 <p className="text-portfolio-text/80 mb-4 text-sm leading-relaxed">

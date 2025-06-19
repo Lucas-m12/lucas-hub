@@ -1,10 +1,10 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Globe } from 'lucide-react';
-import { useLanguage } from '@/lib/contexts/language-context';
 import { Button } from '@/components/ui/button';
+import { useLanguage } from '@/lib/contexts/language-context';
+import { AnimatePresence, motion } from 'framer-motion';
+import { Globe, Menu, X } from 'lucide-react';
+import { useEffect, useState } from 'react';
 
 const navigation = [
   { key: 'nav.about', href: '#about' },
@@ -52,7 +52,7 @@ export function Header() {
               href="#"
               className="text-xl font-bold text-portfolio-text hover:text-portfolio-accent-blue transition-colors"
             >
-              João Silva
+              Lucas Marinho
             </a>
           </motion.div>
 
