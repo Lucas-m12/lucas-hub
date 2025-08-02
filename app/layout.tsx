@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     description: 'Desenvolvedor Full Stack especializado em React, Node.js e tecnologias modernas.',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/api/og',
         width: 1200,
         height: 630,
         alt: 'Lucas Marinho - Desenvolvedor Full Stack',
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Lucas Marinho - Desenvolvedor Full Stack',
     description: 'Desenvolvedor Full Stack especializado em React, Node.js e tecnologias modernas.',
-    images: ['/og-image.jpg'],
+    images: ['/api/og'],
   },
   robots: {
     index: true,
@@ -82,8 +82,20 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    // Add your Google Search Console verification code here
-    // google: 'your-google-verification-code',
+    google: 'YOUR_GOOGLE_VERIFICATION_CODE_HERE', // Replace with your actual verification code from Google Search Console
+  },
+  icons: {
+    icon: [
+      { url: '/api/favicon?size=16', sizes: '16x16', type: 'image/png' },
+      { url: '/api/favicon?size=32', sizes: '32x32', type: 'image/png' },
+      { url: '/api/favicon?size=48', sizes: '48x48', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/api/favicon?size=180', sizes: '180x180', type: 'image/png' },
+    ],
+    other: [
+      { rel: 'mask-icon', url: '/api/favicon?size=16', color: '#3b82f6' },
+    ],
   },
 };
 
