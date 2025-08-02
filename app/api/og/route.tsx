@@ -56,7 +56,6 @@ export async function GET(request: NextRequest) {
             style={{
               fontSize: '72px',
               fontWeight: 'bold',
-              color: '#ffffff',
               marginBottom: '16px',
               background: 'linear-gradient(135deg, #3b82f6 0%, #10b981 100%)',
               backgroundClip: 'text',
